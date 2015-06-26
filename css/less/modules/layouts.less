@@ -1,0 +1,157 @@
+body{
+  min-width:1200px;
+}
+
+/*topbar*/
+#topbar{
+  height:54px;
+  line-height:54px;
+  background:@bg-color-gray;
+  &:extend(.clearfix all);
+  .inner{
+    width:1200px;
+    margin:0 auto;
+  }
+  .account{
+    padding-left:10px;
+    a{
+      padding:0 10px;
+    }
+  }
+  #topnav{
+    float:right;
+    a{
+      padding:0 13px;
+      line-height:54px;
+      float:left;
+      color:@font-color-base;
+
+      &:hover{
+        background:#e7e7e7;
+      }
+    }
+  }
+}
+
+/*页头*/
+#header{
+  height:118px;
+  position:relative;
+  z-index:99;
+  .inner{
+    width:1200px;
+    margin:0 auto;
+    position:relative;
+    &:extend(.clearfix all);
+    border-bottom:1px solid @border-color-gray;
+  }
+  .logo{
+    width:270px;
+    height:118px;
+    float:left;
+    .pic{
+      display:block;
+      width:156px;
+      height:90px;
+      margin:14px 0;
+      .sp_common;
+      background-position:0 0;
+    }
+  }
+  .hotline{
+    width:310px;
+    height:42px;
+    padding-top:38px;
+    font-size:18px;
+    line-height:42px;
+    color:@font-color-gray;
+    text-align:center;
+    float:right;
+  }
+  .searchbar{
+    width:618px;
+    height:42px;
+    margin-left:270px;
+    padding-top:38px;
+    .ipt{
+      width:478px;
+      height:42px;
+    }
+    .btn{
+      width:115px;
+      height:42px;
+      i{
+        display:inline-block;
+        width:42px;
+        height:42px;
+        .sp_common;
+        background-position:0 -200px;
+      }
+    }
+  }
+}
+
+/*主内容区域*/
+.main-wrapper{
+  padding:0.1px; //fixed sub-element out of parent-element
+  min-height:500px;
+  .inner{
+    &:extend(.clearfix all);
+    width:1200px;
+    .margin_lr_auto;
+    position:relative;
+  }
+}
+
+/*页尾*/
+#footer{
+  background-color:@gray-light;
+  .inner{
+    width:1200px;
+    height:190px;
+    .margin_lr_auto;
+    padding:30px 0;
+    &:extend(.clearfix all);
+  }
+  .logo_gray{
+    width:156px;
+    height:90px;
+    .sp_common;
+    background-position:0 -100px;
+    float:left;
+  }
+  .qr-code{
+    float:right;
+    .img{
+      background:#fff;
+      border:1px solid @border-color-gray-dark;
+      width:108px;
+      height:108px;
+      padding:10px;
+    }
+  }
+  .bottom_nav{
+    width:780px;
+    margin:0 auto;
+    &:extend(.clearfix all);
+    nav{
+      float:left;
+      width:190px;
+      padding-left:68px;
+      h3{
+        font-size:20px;
+        font-weight:bold;
+        padding-bottom:15px;
+      }
+      ul{
+        li{
+          a{
+            display:block;
+            font:12/20px @font-family;
+            padding:8px 0;
+          }
+        }
+      }
+    }
+  }
+}

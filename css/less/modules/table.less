@@ -1,0 +1,24 @@
+.table{
+	width:100%;
+	border:1px solid @table-border-color;
+	background-color: #fff;
+	border-collapse: collapse;
+	overflow: hidden;
+	th,td{
+		padding: 10px;
+		border-bottom: 1px solid @border-color-gray;
+		text-align: center;
+		vertical-align: middle;
+		&.tl{ text-align: left;}
+		&.tr{ text-align: right;}
+	}
+	th{
+		line-height: 25px;
+		font-weight: bold;
+	}
+	td{
+		line-height: 20px;
+		padding: 10px;
+		font-size: 12px;
+	}
+}

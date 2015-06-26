@@ -1,0 +1,204 @@
+@import (reference) "common";
+.classify{
+  width:280px;
+  height:368px;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:2;
+  h2.title{
+    font:20px/38px @font-family;
+    color:@primary-color;
+    padding-left:45px;
+    position:relative;
+    margin:13px 0;
+    i{
+      position:absolute;
+      width:38px;
+      height:38px;
+      left:0;
+      top:0;
+      .sp_common;
+      background-position:-150px -200px;
+    }
+  }
+  .menu{
+    position:relative;
+    .item{
+      height:36px;
+      border:1px solid transparent;
+      .link{
+        display:block;
+        position:relative;
+        line-height:36px;
+        font-size:16px;
+        padding-left:15px;
+        transition:padding .3s;
+        i{
+          position:absolute;
+          width:38px;
+          height:38px;
+          right:10px;
+          top:0;
+          .sp_common;
+          background-position:-50px -200px;
+        }
+      }
+      .sub-menu{
+        display:none;
+        width:910px;
+        height:292px;
+        padding:5px;
+        position:absolute;
+        top:0;
+        left:278px;
+        background-color:#fff;
+        border:1px solid #ebebeb;
+        box-shadow:2px 2px 5px rgba(0,0,0,0.1);
+        z-index:3;
+      }
+    }
+    //¼¤»î×´Ì¬
+    .active{
+      border-color:#ebebeb;
+      box-shadow:2px 2px 5px rgba(0,0,0,0.1);
+      .link{
+        position:relative;
+        z-index:4;
+        padding-left:25px;
+        background-color:#fff;
+        i{
+          background-position:-100px -200px;
+        }
+      }
+      .sub-menu{
+        display:block;
+      }
+    }
+  }
+}
+.m_scr{
+  position:relative;
+  padding-left:280px;
+  .main_nav{
+    height:64px;
+    &:extend(.clearfix all);
+    a{
+      float:left;
+      font:20px/40px @font-family;
+      padding:10px 40px 0;
+      &:hover,
+      &.active{
+        color:@primary-color;
+        border-bottom:1px solid @primary-color;
+      }
+    }
+  }
+  .banner{
+    width:618px;
+    height:304px;
+  }
+  .business{
+    float:right;
+    width:234px;
+    height:252px;
+    padding:25px;
+    border:1px solid @border-color-gray;
+    .bjd{
+      color:@primary-color;
+      margin-top:15px;
+      font-size:16px;
+      text-decoration:underline;
+    }
+    .entry{
+      .btn{
+        margin-top:32px;
+      }
+    }
+    .tips{
+      margin-top:20px;
+      font-size:12px;
+      color:@font-color-gray-light;
+    }
+  }
+}
+.widget-m{
+  margin:20px 0;
+  border:1px solid @border-color-gray;
+  .l-pic{
+    width:279px;
+    height:410px;
+    border-right:1px solid @border-color-gray;
+    float:left;
+    position:relative;
+    .hd{
+      position:absolute;
+      left:0;
+      top:0;
+      .tit{
+        font:22px/40px @font-family;
+        margin:5px 0 0 15px;
+      }
+      .more{
+        font-size:14px;
+        color:@primary-color;
+        padding-left:15px;
+      }
+    }
+  }
+  .tab{
+    height:410px;
+    margin-left:280px;
+    overflow:hidden;
+    .tab-hd{
+      height:50px;
+      background-color:#F6F6F6;
+      background-image:-webkit-linear-gradient(left,#F6F6F6,#fff);
+      background-image:-moz-linear-gradient(left,#F6F6F6,#fff);
+      background-image:-ms-linear-gradient(left,#F6F6F6,#fff);
+      .tag{
+        display:inline-block;
+        font:16px/50px @font-family;
+        padding:0 50px;
+      }
+      .active{
+        background-color:@primary-color;
+        color:#fff;
+      }
+    }
+    .tab-bd{padding:10px 15px;}
+    .table{
+      border-width:0;
+      font-size:12px;
+      td{
+        border-bottom-style:dashed;
+      }
+    }
+  }
+  .buyerlist{
+    padding:20px;
+    border-top:1px solid @border-color-gray;
+    .tit{
+      font-size:22px;
+    }
+    .list{
+      &:extend(.clearfix all);
+      li{
+        width:240px;
+        height:30px;
+        line-height:30px;
+        float: left;
+        padding: 15px 45px 15px 0px;
+        .info{
+          width:130px;
+          display:inline-block;
+          vertical-align:middle;
+          .ellipsis;
+        }
+        .btn{
+          float:right;
+        }
+      }
+    }
+  }
+}

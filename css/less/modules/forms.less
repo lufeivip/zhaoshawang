@@ -1,0 +1,121 @@
+/*
+*forms
+*/
+form{
+	.error{
+		color: #f00;
+	}
+}
+.form-group{
+	margin-bottom: 10px;
+}
+.ipt{
+	background-color: @input-bg;
+	border:0px none;
+	height: @input-height-default;
+	padding: 0 10px;
+	vertical-align: middle;
+	font:14px/@input-height-default @font-family;
+	&:focus{
+		outline: 0 none;
+		border-color:@primary-color
+	}
+}
+
+.ipt-large{
+	height: @input-height-large;
+	font-size: @font-size-base +2px;
+	line-height: @input-height-large;
+}
+.ipt-short{
+	width:60px;
+}
+/*buttons*/
+.makeBtn(@bg-color,@bg-hover-color,@font-color,@font-hover-color){
+  background-color: @bg-color;
+  color:@font-color;
+  &:hover{
+	color:@font-hover-color;
+	background-color: @bg-hover-color;
+  }
+  &:active{
+	color:@font-hover-color;
+	background-color: darken(@bg-hover-color,10%);
+  }
+  &:focus{
+	color:@font-hover-color;
+  }
+  &[disabled]{
+	background-color: #d2d2d2;
+  }
+}
+.btn{
+  font-family: @font-family;
+  border: 0 none;
+  cursor: pointer;
+  height:@btn-height-default;
+  line-height: @btn-height-default;
+  vertical-align: middle;
+  padding:0 20px;
+  text-align:center;
+  &:focus{
+	outline:0 none;
+  }
+  &[disabled]{
+	cursor: not-allowed;
+  }
+}
+.btn-primary{
+  .makeBtn(@primary-color,darken(@primary-color,10%),#fff,#fff)
+}
+.btn-secondary{
+  .makeBtn(@secondary-color,darken(@secondary-color,10%),#fff,#fff)
+}
+.btn-bordered{
+  @height:@btn-height-default - 2px;
+  .makeBtn(#fff,@primary-color,@primary-color,#fff);
+  height:@height;
+  line-height:@height;
+  border:1px solid @primary-color;
+}
+a,span{
+  &.btn{
+  	display:inline-block;
+  }
+  &.btn-block{
+	padding:0;
+  }
+}
+
+
+.btn-small{
+	line-height: 20px;
+}
+.btn-large{
+  font-size:20px;
+  height: @btn-height-large;
+  line-height: @btn-height-large;
+}
+.btn-block{
+	display: block;
+	width:100%;
+}
+em.required{
+	vertical-align: middle;
+	color: red;
+	margin-right: 5px;
+}
+.form-list{
+	line-height: 30px;
+	.form-group{
+		&:extend(.clearfix all);
+	}
+	.control-label{
+		text-align: right;
+		width:120px;
+		float: left;
+	}
+	.form-control{
+		float: left;
+	}
+}
