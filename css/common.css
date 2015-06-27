@@ -570,9 +570,6 @@ form .error {
   color: #ffffff;
   background-color: #c65d00;
 }
-.btn-primary:focus {
-  color: #ffffff;
-}
 .btn-primary[disabled] {
   background-color: #d2d2d2;
 }
@@ -587,9 +584,6 @@ form .error {
 .btn-secondary:active {
   color: #ffffff;
   background-color: #005292;
-}
-.btn-secondary:focus {
-  color: #ffffff;
 }
 .btn-secondary[disabled] {
   background-color: #d2d2d2;
@@ -608,9 +602,6 @@ form .error {
 .btn-bordered:active {
   color: #ffffff;
   background-color: #f97500;
-}
-.btn-bordered:focus {
-  color: #ffffff;
 }
 .btn-bordered[disabled] {
   background-color: #d2d2d2;
