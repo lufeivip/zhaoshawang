@@ -1,24 +1,24 @@
 #topbar,
-#header .inner,
+#header .main_nav,
+#h-f1,
 .main-wrapper .inner,
 #footer .inner,
 #footer .bottom_nav,
 .tab-panel .tab-hd,
 .form-list .form-group,
 .pager,
-.m_scr .main_nav,
 .widget-m .buyerlist .list {
   *zoom: 1;
 }
 #topbar:after,
-#header .inner:after,
+#header .main_nav:after,
+#h-f1:after,
 .main-wrapper .inner:after,
 #footer .inner:after,
 #footer .bottom_nav:after,
 .tab-panel .tab-hd:after,
 .form-list .form-group:after,
 .pager:after,
-.m_scr .main_nav:after,
 .widget-m .buyerlist .list:after {
   content: '';
   display: block;
@@ -26,103 +26,9 @@
   height: 0;
   visibility: hidden;
 }
-.classify {
-  width: 280px;
-  height: 368px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 2;
-}
-.classify h2.title {
-  font: 20px/38px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
-  color: #ff902d;
-  padding-left: 45px;
-  position: relative;
-  margin: 13px 0;
-}
-.classify h2.title i {
-  position: absolute;
-  width: 38px;
-  height: 38px;
-  left: 0;
-  top: 0;
-  background-image: url("img/common.png");
-  background-repeat: no-repeat;
-  background-position: -150px -200px;
-}
-.classify .menu {
-  position: relative;
-}
-.classify .menu .item {
-  height: 36px;
-  border: 1px solid transparent;
-}
-.classify .menu .item .link {
-  display: block;
-  position: relative;
-  line-height: 36px;
-  font-size: 16px;
-  padding-left: 15px;
-  transition: padding .3s;
-}
-.classify .menu .item .link i {
-  position: absolute;
-  width: 38px;
-  height: 38px;
-  right: 10px;
-  top: 0;
-  background-image: url("img/common.png");
-  background-repeat: no-repeat;
-  background-position: -50px -200px;
-}
-.classify .menu .item .sub-menu {
-  display: none;
-  width: 910px;
-  height: 292px;
-  padding: 5px;
-  position: absolute;
-  top: 0;
-  left: 278px;
-  background-color: #fff;
-  border: 1px solid #ebebeb;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 3;
-}
-.classify .menu .active {
-  border-color: #ebebeb;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-.classify .menu .active .link {
-  position: relative;
-  z-index: 4;
-  padding-left: 25px;
-  background-color: #fff;
-}
-.classify .menu .active .link i {
-  background-position: -100px -200px;
-}
-.classify .menu .active .sub-menu {
-  display: block;
-}
 .m_scr {
   position: relative;
   padding-left: 280px;
-}
-.m_scr .main_nav {
-  height: 64px;
-}
-.m_scr .main_nav a {
-  float: left;
-  font: 20px/40px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
-  padding: 10px 40px 0;
-}
-.m_scr .main_nav a:hover,
-.m_scr .main_nav a.active {
-  color: #ff902d;
-  border-bottom: 1px solid #ff902d;
 }
 .m_scr .banner {
   width: 618px;

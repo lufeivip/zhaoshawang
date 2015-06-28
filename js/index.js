@@ -7,15 +7,6 @@ var mySwiper = new Swiper ('.swiper-container', {
     pagination: '.swiper-pagination'
 })
 $(function(){
-    /*classify*/
-    $(".classify .menu").on('mouseenter','.item',function(){
-        console.log("over")
-        var $item=$(this);
-        $item.addClass('active');
-    })
-    $(".classify .menu").on('mouseleave','.item',function(){
-        var $item=$(this);
-        $item.removeClass('active');
-    })
+
 
 })

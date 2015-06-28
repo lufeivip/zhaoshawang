@@ -302,7 +302,8 @@ p {
 }
 .clearfix,
 #topbar,
-#header .inner,
+#header .main_nav,
+#h-f1,
 .main-wrapper .inner,
 #footer .inner,
 #footer .bottom_nav,
@@ -313,7 +314,8 @@ p {
 }
 .clearfix:after,
 #topbar:after,
-#header .inner:after,
+#header .main_nav:after,
+#h-f1:after,
 .main-wrapper .inner:after,
 #footer .inner:after,
 #footer .bottom_nav:after,
@@ -371,7 +373,6 @@ body {
 }
 /*页头*/
 #header {
-  height: 118px;
   position: relative;
   z-index: 99;
 }
@@ -379,7 +380,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   position: relative;
-  border-bottom: 1px solid #e9e9e9;
 }
 #header .logo {
   width: 270px;
@@ -426,6 +426,112 @@ body {
   background-image: url("img/common.png");
   background-repeat: no-repeat;
   background-position: 0 -200px;
+}
+#header #classify {
+  background-color: #fff;
+  width: 280px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+#header #classify h2.title {
+  font: 20px/38px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  color: #ff902d;
+  padding-left: 45px;
+  position: relative;
+  margin: 13px 0;
+}
+#header #classify h2.title i {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: 0;
+  top: 0;
+  background-image: url("img/common.png");
+  background-repeat: no-repeat;
+  background-position: -150px -200px;
+}
+#header #classify .menu {
+  position: relative;
+}
+#header #classify .menu .item {
+  height: 36px;
+  border: 1px solid transparent;
+}
+#header #classify .menu .item .link {
+  display: block;
+  position: relative;
+  line-height: 36px;
+  font-size: 16px;
+  padding-left: 15px;
+  transition: padding .3s;
+}
+#header #classify .menu .item .link i {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  right: 10px;
+  top: 0;
+  background-image: url("img/common.png");
+  background-repeat: no-repeat;
+  background-position: -50px -200px;
+}
+#header #classify .menu .item .sub-menu {
+  display: none;
+  width: 910px;
+  height: 292px;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  left: 278px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+#header #classify .menu .active {
+  border-color: #ebebeb;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#header #classify .menu .active .link {
+  position: relative;
+  z-index: 4;
+  padding-left: 25px;
+  background-color: #fff;
+}
+#header #classify .menu .active .link i {
+  background-position: -100px -200px;
+}
+#header #classify .menu .active .sub-menu {
+  display: block;
+}
+#header .fold .menu {
+  display: none;
+}
+#header .main_nav {
+  height: 64px;
+  margin-left: 280px;
+}
+#header .main_nav a {
+  float: left;
+  font: 20px/40px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  padding: 10px 40px 0;
+}
+#header .main_nav a:hover,
+#header .main_nav a.active {
+  color: #ff902d;
+  border-bottom: 1px solid #ff902d;
+}
+#h-f1 {
+  height: 118px;
+  border-bottom: 1px solid #e9e9e9;
+}
+#h-f2 {
+  height: 64px;
+  position: relative;
 }
 /*主内容区域*/
 .main-wrapper {
@@ -517,9 +623,9 @@ body {
   border-radius: 0px 3px 3px 3px;
 }
 .tit_h2 {
-  font: bold 16px/30px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font: 22px/30px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
   color: #353535;
-  margin: 20px 0 10px;
+  margin: 30px 0 10px;
 }
 /*
 *forms
@@ -623,7 +729,8 @@ span.btn-block {
   padding: 0;
 }
 .btn-small {
-  line-height: 20px;
+  height: 30px;
+  line-height: 30px;
 }
 .btn-large {
   font-size: 20px;
@@ -649,6 +756,65 @@ em.required {
   border: 1px solid #e9e9e9;
   background-color: #fff;
   padding: 20px;
+}
+.filter-panel {
+  border: 1px solid #e9e9e9;
+}
+.filter-panel .hd {
+  padding: 7px 20px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.filter-panel .hd .selected-c {
+  overflow: hidden;
+}
+.filter-panel .hd .selected-c dt,
+.filter-panel .hd .selected-c dd {
+  float: left;
+}
+.filter-panel .hd .selected-c dt {
+  line-height: 30px;
+}
+.filter-panel .hd .selected-c dd {
+  height: 20px;
+  font: 14px/20px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  color: #ff902d;
+  border: 1px solid #ff902d;
+  margin: 4px;
+  padding: 0 15px;
+}
+.filter-panel .hd .selected-c dd .close {
+  display: inline-block;
+  padding: 0 5px;
+  margin-right: -15px;
+  margin-left: 5px;
+  color: #ff902d;
+  font-variant: small-caps;
+}
+.filter-panel .hd .selected-c dd .close:hover {
+  background: #ff902d;
+  color: #fff;
+}
+.filter-panel .bd {
+  padding: 10px 20px;
+}
+.filter-panel .bd .factor .list {
+  overflow: hidden;
+}
+.filter-panel .bd .factor .list dt,
+.filter-panel .bd .factor .list dd {
+  float: left;
+  margin: 5px;
+}
+.filter-panel .bd .factor .list dt {
+  color: #ff902d;
+}
+.filter-panel .bd .factor .list dd {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.filter-panel .bd .factor .list dd:hover {
+  color: #008bf8;
+  text-decoration: underline;
 }
 .table {
   width: 100%;
@@ -680,6 +846,13 @@ em.required {
   line-height: 20px;
   padding: 10px;
   font-size: 12px;
+}
+.table-dashed th {
+  background-color: #f1f1f1;
+  border-bottom-width: 0;
+}
+.table-dashed td {
+  border-style: dashed;
 }
 .pager {
   margin-top: 30px;

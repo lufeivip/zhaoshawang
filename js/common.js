@@ -2,6 +2,22 @@
  * Created by lufei01 on 2015/6/26 0026.
  */
 $(function(){
+    /*classify*/
+    //子菜单显示隐藏
+    $("#classify .menu").on('mouseenter','.item',function(){
+        console.log("over")
+        var $item=$(this);
+        $item.addClass('active');
+    })
+    $("#classify .menu").on('mouseleave','.item',function(){
+        var $item=$(this);
+        $item.removeClass('active');
+    })
+    //带单开关触发
+    $("#classify").on("click","h2.title",function(){
+        $classify=$("#classify");
+        $classify.toggleClass("fold");
+    })
     /*tab切换
      * 给元素加【node-type=tag】
      * */

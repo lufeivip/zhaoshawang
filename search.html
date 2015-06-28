@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>现货搜索|找纱网</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/search.css"/>
+    <script src="lib/jquery-1.8.2.min.js"></script>
+    <!--[if lte IE 9]>
+    <script src="lib/h5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="topbar">
+    <div class="inner">
+        <div id="topnav">
+            <a href="javascript:;">会员中心</a>
+            <a href="javascript:;">我的订单</a>
+            <a href="javascript:;">新手指南</a>
+            <a href="javascript:;">客户端下载</a>
+        </div>
+        <span class="welcome">欢迎来到找纱网</span>
+        <span class="account">
+            <a href="login.html" class="orange">请登录</a>
+            <a href="register.html">免费注册</a>
+        </span>
+    </div>
+</div>
+<header id="header">
+    <div class="inner">
+        <div id="h-f1">
+            <div class="logo">
+                <a href="javascript:;" class="pic"></a>
+            </div>
+            <div class="hotline">
+                服务热线：<span class="orange">400-8898-2306</span>
+            </div>
+            <div class="searchbar">
+                <input type="text" class="ipt" placeholder="请输入产品名称、规格、厂商信息"/>
+                <button type="button" class="btn btn-primary"><i class="icon icon-search40"></i></button>
+            </div>
+        </div>
+        <div id="h-f2">
+            <section id="classify" class="fold">
+                <h2 class="title"><i></i>纱线分类</h2>
+                <ul class="menu">
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>纯纺纱</a>
+                        <div class="sub-menu">
+                            sub-menu
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>纺纱</a>
+                        <div class="sub-menu">
+                            sub-menu2
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>进口纱线</a>
+                        <div class="sub-menu">
+                            sub-menu3
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>新纤维纱</a>
+                        <div class="sub-menu">
+                            sub-menu4
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>特种工艺纱</a>
+                        <div class="sub-menu">
+                            sub-menu5
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>功能性纺纱</a>
+                        <div class="sub-menu">
+                            sub-menu6
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>色纱/色纺</a>
+                        <div class="sub-menu">
+                            sub-menu7
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>缝纫线</a>
+                        <div class="sub-menu">
+                            sub-menu8
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <div class="main_nav">
+                <a href="javascript:;">首页</a>
+                <a href="javascript:;" class="active">现货供应</a>
+                <a href="javascript:;">报价单下载</a>
+                <a href="javascript:;">求购信息</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="main-wrapper search-wrapper">
+    <div class="inner">
+    <!--页面内容开始-->
+        <div class="filter-panel">
+            <div class="hd">
+                <dl class="selected-c">
+                    <dt>现货搜索：</dt>
+                    <dd><span class="k">品类</span>：<span class="v">混纺纱</span><a class="close" href="javasctipt:;">x</a></dd>
+                    <dd><span class="k">支数</span>：<span class="v">30s</span><a class="close" href="javasctipt:;">x</a></dd>
+                    <dd><span class="k">仓库</span>：<span class="v">广州深圳</span><a class="close" href="javasctipt:;">x</a></dd>
+                </dl>
+            </div>
+            <div class="bd">
+                <div class="factor">
+                    <dl class="list">
+                        <dt class="k">仓库：</dt>
+                        <dd class="v">浙江萧山</dd>
+                        <dd class="v">江苏常州</dd>
+                        <dd class="v">广州深圳</dd>
+                    </dl>
+                    <dl class="list">
+                        <dt class="k">支数：</dt>
+                        <dd class="v">XX01S</dd>
+                        <dd class="v">XX02S</dd>
+                        <dd class="v">XX03S</dd>
+                        <dd class="v">XX04S</dd>
+                        <dd class="v">XX05S</dd>
+                        <dd class="v">XX06S</dd>
+                        <dd class="v">XX07S</dd>
+                        <dd class="v">XX08S</dd>
+                        <dd class="v">XX09S</dd>
+                        <dd class="v">XX10S</dd>
+                        <dd class="v">XX11S</dd>
+                        <dd class="v">XX12S</dd>
+                        <dd class="v">XX13S</dd>
+                        <dd class="v">XX14S</dd>
+                        <dd class="v">XX15S</dd>
+                        <dd class="v">XX16S</dd>
+                        <dd class="v">XX17S</dd>
+                        <dd class="v">XX18S</dd>
+                        <dd class="v">XX19S</dd>
+                        <dd class="v">XX20S</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <h2 class="tit_h2">现货供应列表</h2>
+        <div class="tabel-wrapper mb30">
+            <table class="table table-dashed">
+                <thead>
+                    <tr>
+                        <th>品名</th>
+                        <th>规格</th>
+                        <th>成纱工艺</th>
+                        <th>原料成分</th>
+                        <th>价格</th>
+                        <th>数量</th>
+                        <th>仓库</th>
+                        <th>公司名称</th>
+                        <th>发布时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>纯棉纱（精梳）</td>
+                        <td>80s</td>
+                        <td>环锭纺</td>
+                        <td>c100</td>
+                        <td>19200/吨</td>
+                        <td>100吨</td>
+                        <td>广州</td>
+                        <td>
+                            <div class="compa-info">
+                                <a href="javscript:;">江苏常州东华纺织贸易有限公司</a>
+                                <div class="detail">
+                                    <div class="co-name">江苏常州东华纺织贸易有限公司</div>
+                                    <div class="contact"><span class="name">王老板</span><span class="tel">13312345678</span></div>
+                                    <div class="tips">欢迎您与我直接联系，提找纱网更优惠</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>1天前</td>
+                        <td><a class="btn btn-small btn-primary" href="javascript:;">查看详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>纯棉纱（精梳）</td>
+                        <td>80s</td>
+                        <td>环锭纺</td>
+                        <td>c100</td>
+                        <td>19200/吨</td>
+                        <td>100吨</td>
+                        <td>广州</td>
+                        <td>
+                            <div class="compa-info">
+                                <a href="javscript:;">江苏常州东华纺织贸易有限公司</a>
+                                <div class="detail">
+                                    <div class="co-name">江苏常州东华纺织贸易有限公司</div>
+                                    <div class="contact"><span class="name">王老板</span><span class="tel">13312345678</span></div>
+                                    <div class="tips">欢迎您与我直接联系，提找纱网更优惠</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>1天前</td>
+                        <td><a class="btn btn-small btn-primary" href="javascript:;">查看详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>纯棉纱（精梳）</td>
+                        <td>80s</td>
+                        <td>环锭纺</td>
+                        <td>c100</td>
+                        <td>19200/吨</td>
+                        <td>100吨</td>
+                        <td>广州</td>
+                        <td>
+                            <div class="compa-info">
+                                <a href="javscript:;">江苏常州东华纺织贸易有限公司</a>
+                                <div class="detail">
+                                    <div class="co-name">江苏常州东华纺织贸易有限公司</div>
+                                    <div class="contact"><span class="name">王老板</span><span class="tel">13312345678</span></div>
+                                    <div class="tips">欢迎您与我直接联系，提找纱网更优惠</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>1天前</td>
+                        <td><a class="btn btn-small btn-primary" href="javascript:;">查看详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>纯棉纱（精梳）</td>
+                        <td>80s</td>
+                        <td>环锭纺</td>
+                        <td>c100</td>
+                        <td>19200/吨</td>
+                        <td>100吨</td>
+                        <td>广州</td>
+                        <td>
+                            <div class="compa-info">
+                                <a href="javscript:;">江苏常州东华纺织贸易有限公司</a>
+                                <div class="detail">
+                                    <div class="co-name">江苏常州东华纺织贸易有限公司</div>
+                                    <div class="contact"><span class="name">王老板</span><span class="tel">13312345678</span></div>
+                                    <div class="tips">欢迎您与我直接联系，提找纱网更优惠</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>1天前</td>
+                        <td><a class="btn btn-small btn-primary" href="javascript:;">查看详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>纯棉纱（精梳）</td>
+                        <td>80s</td>
+                        <td>环锭纺</td>
+                        <td>c100</td>
+                        <td>19200/吨</td>
+                        <td>100吨</td>
+                        <td>广州</td>
+                        <td>
+                            <div class="compa-info">
+                                <a href="javscript:;">江苏常州东华纺织贸易有限公司</a>
+                                <div class="detail">
+                                    <div class="co-name">江苏常州东华纺织贸易有限公司</div>
+                                    <div class="contact"><span class="name">王老板</span><span class="tel">13312345678</span></div>
+                                    <div class="tips">欢迎您与我直接联系，提找纱网更优惠</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>1天前</td>
+                        <td><a class="btn btn-small btn-primary" href="javascript:;">查看详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>纯棉纱（精梳）</td>
+                        <td>80s</td>
+                        <td>环锭纺</td>
+                        <td>c100</td>
+                        <td>19200/吨</td>
+                        <td>100吨</td>
+                        <td>广州</td>
+                        <td>
+                            <div class="compa-info">
+                                <a href="javscript:;">江苏常州东华纺织贸易有限公司</a>
+                                <div class="detail">
+                                    <div class="co-name">江苏常州东华纺织贸易有限公司</div>
+                                    <div class="contact"><span class="name">王老板</span><span class="tel">13312345678</span></div>
+                                    <div class="tips">欢迎您与我直接联系，提找纱网更优惠</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>1天前</td>
+                        <td><a class="btn btn-small btn-primary" href="javascript:;">查看详情</a></td>
+                    </tr>
+                    <tr>
+                        <td>纯棉纱（精梳）</td>
+                        <td>80s</td>
+                        <td>环锭纺</td>
+                        <td>c100</td>
+                        <td>19200/吨</td>
+                        <td>100吨</td>
+                        <td>广州</td>
+                        <td>
+                            <div class="compa-info">
+                                <a href="javscript:;">江苏常州东华纺织贸易有限公司</a>
+                                <div class="detail">
+                                    <div class="co-name">江苏常州东华纺织贸易有限公司</div>
+                                    <div class="contact"><span class="name">王老板</span><span class="tel">13312345678</span></div>
+                                    <div class="tips">欢迎您与我直接联系，提找纱网更优惠</div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>1天前</td>
+                        <td><a class="btn btn-small btn-primary" href="javascript:;">查看详情</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <!--页面内容结束-->
+    </div>
+</div>
+<footer id="footer">
+    <div class="inner">
+        <div class="logo_gray"></div>
+        <div class="qr-code">
+            <div class="img"><img src="images/qr-code.png" alt=""/></div>
+            <p>加找纱网为微信好友</p>
+        </div>
+        <div class="bottom_nav">
+            <nav>
+                <h3>我要买货</h3>
+                <ul>
+                    <li><a href="javascript:;">我是买家，如何找货？</a></li>
+                    <li><a href="javascript:;">如何委托交易</a></li>
+                    <li><a href="javascript:;">如何自己找货</a></li>
+                    <li><a href="javascript:;">如何查看</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>我要卖货</h3>
+                <ul>
+                    <li><a href="javascript:;">我是买家，如何销售？</a></li>
+                    <li><a href="javascript:;">怎样发布报价</a></li>
+                    <li><a href="javascript:;">怎样报价给买家</a></li>
+                    <li><a href="javascript:;">如何批量上传报价单</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>常见问题</h3>
+                <ul>
+                    <li><a href="javascript:;">如何注册账号</a></li>
+                    <li><a href="javascript:;">无法登陆/忘记密码</a></li>
+                    <li><a href="javascript:;">怎样报价给买家</a></li>
+                    <li><a href="javascript:;">如何查看</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+</footer>
+<script src="js/common.js"></script>
+</body>
+</html>

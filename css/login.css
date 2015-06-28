@@ -1,5 +1,6 @@
 #topbar,
-#header .inner,
+#header .main_nav,
+#h-f1,
 .main-wrapper .inner,
 #footer .inner,
 #footer .bottom_nav,
@@ -9,7 +10,8 @@
   *zoom: 1;
 }
 #topbar:after,
-#header .inner:after,
+#header .main_nav:after,
+#h-f1:after,
 .main-wrapper .inner:after,
 #footer .inner:after,
 #footer .bottom_nav:after,
