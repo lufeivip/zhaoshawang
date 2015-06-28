@@ -1,0 +1,103 @@
+@import (reference) "common";
+.reg-wrapper{
+  .reg_form{
+    margin:70px 0 70px 400px;
+    .form-group{
+      margin-bottom:30px;
+    }
+    .ipt{
+      width:385px;
+    }
+    select.ipt{
+      width:405px;
+    }
+    .v-code-wrap{
+      overflow:hidden;
+    }
+    .v-code-ipt{
+      float:left;
+      width:250px;
+    }
+    .v-code-btn{
+      float:left;
+      width:130px;
+      margin-left:5px;
+    }
+    .agreement{
+      font-size:12px;
+    }
+  }
+  //注册第一步
+  .reg-step-1{
+    .clearfix;
+    .form-list{
+      width:405px;
+      float:left;
+    }
+    .tologin{
+      float:left;
+      padding:33px 0 0 30px;
+      a{
+        color:@primary-color;
+        text-decoration:underline;
+      }
+    }
+  }
+  //注册第二步
+  .reg-step-2{
+    .form-group{
+      margin-bottom:11px;
+      .form-control{
+        position:relative;
+        .tips{
+          position:absolute;
+          left:430px;
+          top:0;
+          width:370px;
+          .ellipsis;
+          font:12px/42px @font-family;
+          color:@font-color-gray-light;
+        }
+      }
+    }
+    .company-posi{
+      margin-top:10px;
+      margin-bottom:30px;
+    }
+    .ctrler{
+      width:405px;
+    }
+  }
+  //注册成功
+  .reg-success{
+    width:405px;
+    .result{
+      padding-left:75px;
+      position:relative;
+      .icon{
+        width:50px;
+        height:50px;
+        position:absolute;
+        left:0;
+        top:0;
+        .sp_common;
+        background-position:0 -250px;
+      }
+      h1{
+        font:36px/50px @font-family;
+        margin-bottom:15px;
+      }
+      .p{
+        line-height:26px;
+      }
+      .account{
+        margin-top:15px;
+        margin-bottom:40px;
+        em{
+          color:@secondary-color;
+        }
+      }
+    }
+  }
+
+}

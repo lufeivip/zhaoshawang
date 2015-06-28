@@ -1,0 +1,83 @@
+@import (reference) "common";
+.login-wrapper{
+  .inner{
+    margin-top:100px;
+    margin-bottom:70px;
+  }
+  .login-panel{
+    width:393px;
+    float:right;
+    border:1px solid @border-color-gray;
+    .boxshadow();
+    .hd,.bd{
+      padding:15px 23px;
+    }
+    .hd{
+      border-bottom:1px solid @border-color-gray;
+      height:30px;
+      .to-register{
+        float:right;
+        a{
+          color:@primary-color;
+        }
+      }
+      .title{
+        font:22px/30px @font-family;
+      }
+    }
+    .ipt{
+      width:327px;
+    }
+    .ctrler{
+      margin-top:42px;
+    }
+    .assist{
+      .forget{
+        float:right;
+        a{
+          color:@primary-color;
+          text-decoration:underline;
+        }
+      }
+    }
+    .qqlogin{
+      position:relative;
+      padding-left:35px;
+      line-height:30px;
+      display:inline-block;
+      i{
+        width:30px;
+        height:30px;
+        position:absolute;
+        left:0;
+        top:0;
+        .sp_common;
+        background-position:-300px -200px;
+      }
+    }
+
+  }
+
+  .login-banner{
+    width:800px;
+    height:494px;
+    background:url("img/adron_1.jpg") no-repeat right center;
+    .slogan{
+      padding-left:38px;
+      padding-top:120px;
+      h2{
+        font-size:40px;
+        color:@font-color-gray-light;
+        em{
+          color:@primary-color;
+        }
+      }
+      h3{
+        font-size:24px;
+      }
+      .tel{
+        font-size:16px;
+      }
+    }
+  }
+}

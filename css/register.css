@@ -1,0 +1,129 @@
+#topbar,
+#header .inner,
+.main-wrapper .inner,
+#footer .inner,
+#footer .bottom_nav,
+.tab-panel .tab-hd,
+.form-list .form-group,
+.pager {
+  *zoom: 1;
+}
+#topbar:after,
+#header .inner:after,
+.main-wrapper .inner:after,
+#footer .inner:after,
+#footer .bottom_nav:after,
+.tab-panel .tab-hd:after,
+.form-list .form-group:after,
+.pager:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.reg-wrapper .reg_form {
+  margin: 70px 0 70px 400px;
+}
+.reg-wrapper .reg_form .form-group {
+  margin-bottom: 30px;
+}
+.reg-wrapper .reg_form .ipt {
+  width: 385px;
+}
+.reg-wrapper .reg_form select.ipt {
+  width: 405px;
+}
+.reg-wrapper .reg_form .v-code-wrap {
+  overflow: hidden;
+}
+.reg-wrapper .reg_form .v-code-ipt {
+  float: left;
+  width: 250px;
+}
+.reg-wrapper .reg_form .v-code-btn {
+  float: left;
+  width: 130px;
+  margin-left: 5px;
+}
+.reg-wrapper .reg_form .agreement {
+  font-size: 12px;
+}
+.reg-wrapper .reg-step-1 {
+  *zoom: 1;
+}
+.reg-wrapper .reg-step-1:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.reg-wrapper .reg-step-1 .form-list {
+  width: 405px;
+  float: left;
+}
+.reg-wrapper .reg-step-1 .tologin {
+  float: left;
+  padding: 33px 0 0 30px;
+}
+.reg-wrapper .reg-step-1 .tologin a {
+  color: #ff902d;
+  text-decoration: underline;
+}
+.reg-wrapper .reg-step-2 .form-group {
+  margin-bottom: 11px;
+}
+.reg-wrapper .reg-step-2 .form-group .form-control {
+  position: relative;
+}
+.reg-wrapper .reg-step-2 .form-group .form-control .tips {
+  position: absolute;
+  left: 430px;
+  top: 0;
+  width: 370px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font: 12px/42px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  color: #aaaaaa;
+}
+.reg-wrapper .reg-step-2 .company-posi {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.reg-wrapper .reg-step-2 .ctrler {
+  width: 405px;
+}
+.reg-wrapper .reg-success {
+  width: 405px;
+}
+.reg-wrapper .reg-success .result {
+  padding-left: 75px;
+  position: relative;
+}
+.reg-wrapper .reg-success .result .icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("img/common.png");
+  background-repeat: no-repeat;
+  background-position: 0 -250px;
+}
+.reg-wrapper .reg-success .result h1 {
+  font: 36px/50px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  margin-bottom: 15px;
+}
+.reg-wrapper .reg-success .result .p {
+  line-height: 26px;
+}
+.reg-wrapper .reg-success .result .account {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.reg-wrapper .reg-success .result .account em {
+  color: #008bf8;
+}
+/*# sourceMappingURL=css/register.css.map */
