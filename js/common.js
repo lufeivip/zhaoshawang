@@ -13,9 +13,12 @@ $(function(){
         var $item=$(this);
         $item.removeClass('active');
     })
-    //带单开关触发
+    //菜单开关触发
     $("#classify").on("click","h2.title",function(){
-        $classify=$("#classify");
+        var $classify=$("#classify");
+        if($classify.hasClass("resident")){
+            return;
+        }
         $classify.toggleClass("fold");
     })
     /*tab切换

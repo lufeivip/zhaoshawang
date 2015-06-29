@@ -136,7 +136,7 @@ button {
 }
 body {
   background-color: #fff;
-  font: 14px/2.14 "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font: 14px/2.14 "Microsoft yahei";
   color: #353535;
 }
 a {
@@ -429,14 +429,14 @@ body {
 }
 #header #classify {
   background-color: #fff;
-  width: 280px;
+  width: 260px;
   position: absolute;
   left: 0;
   top: 0;
   z-index: 2;
 }
 #header #classify h2.title {
-  font: 20px/38px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font: 20px/38px "Microsoft yahei";
   color: #ff902d;
   padding-left: 45px;
   position: relative;
@@ -479,12 +479,11 @@ body {
 }
 #header #classify .menu .item .sub-menu {
   display: none;
-  width: 910px;
-  height: 292px;
-  padding: 5px;
+  width: 940px;
+  height: 302px;
   position: absolute;
   top: 0;
-  left: 278px;
+  left: 258px;
   background-color: #fff;
   border: 1px solid #ebebeb;
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -492,11 +491,65 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 3;
 }
+#header #classify .menu .item .cate {
+  overflow: hidden;
+}
+#header #classify .menu .item .cate .sub-cate {
+  float: left;
+  margin-bottom: 10px;
+}
+#header #classify .menu .item .cate .sub-cate dt {
+  color: #ff902d;
+  height: 30px;
+}
+#header #classify .menu .item .cate .sub-cate dd {
+  float: left;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  margin-right: 12px;
+}
+#header #classify .menu .item .cate .sub-cate dd a {
+  display: block;
+}
+#header #classify .menu .item .cate .sub-cate dd a:hover {
+  color: #008bf8;
+  text-decoration: underline;
+}
+#header #classify .menu .item .texture,
+#header #classify .menu .item .material {
+  padding: 15px 0px 5px 25px;
+  margin-right: 160px;
+}
+#header #classify .menu .item .texture .sub-cate,
+#header #classify .menu .item .material .sub-cate {
+  width: 50%;
+}
+#header #classify .menu .item .texture {
+  border-bottom: 1px solid #e9e9e9;
+  height: 180px;
+}
+#header #classify .menu .item .material {
+  padding-top: 5px;
+  height: 90px;
+}
+#header #classify .menu .item .ext {
+  padding: 5px 5px 5px 0;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+#header #classify .menu .item .ext .pic {
+  width: 150px;
+  height: 292px;
+  border: 1px solid #e9e9e9;
+}
 #header #classify .menu .active {
   border-color: #ebebeb;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 #header #classify .menu .active .link {
+  color: #ff902d;
   position: relative;
   z-index: 4;
   padding-left: 25px;
@@ -517,7 +570,7 @@ body {
 }
 #header .main_nav a {
   float: left;
-  font: 20px/40px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font: 20px/40px "Microsoft yahei";
   padding: 10px 40px 0;
 }
 #header .main_nav a:hover,
@@ -589,7 +642,7 @@ body {
 }
 #footer .bottom_nav nav ul li a {
   display: block;
-  font: 12px/20px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font: 12px/20px "Microsoft yahei";
   padding: 8px 0;
 }
 .tab-panel .tab-hd {
@@ -623,7 +676,7 @@ body {
   border-radius: 0px 3px 3px 3px;
 }
 .tit_h2 {
-  font: 22px/30px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font: 22px/30px "Microsoft yahei";
   color: #353535;
   margin: 30px 0 10px;
 }
@@ -642,7 +695,7 @@ form .error {
   height: 42px;
   padding: 0 10px;
   vertical-align: middle;
-  font: 14px/42px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font: 14px/42px "Microsoft yahei";
 }
 .ipt:focus {
   outline: 0 none;
@@ -657,7 +710,7 @@ form .error {
 }
 /*buttons*/
 .btn {
-  font-family: "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font-family: "Microsoft yahei";
   border: 0 none;
   cursor: pointer;
   height: 42px;
@@ -776,7 +829,7 @@ em.required {
 }
 .filter-panel .hd .selected-c dd {
   height: 20px;
-  font: 14px/20px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font: 14px/20px "Microsoft yahei";
   color: #ff902d;
   border: 1px solid #ff902d;
   margin: 4px;
@@ -913,7 +966,7 @@ em.required {
   display: inline-block;
   padding: 0 20px;
   margin: 0 50px;
-  font: 20px/60px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font: 20px/60px "Microsoft yahei";
   color: #aaaaaa;
 }
 .flow .active {

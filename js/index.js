@@ -7,6 +7,14 @@ var mySwiper = new Swiper ('.swiper-container', {
     pagination: '.swiper-pagination'
 })
 $(function(){
-
+    $(".swiper-container").on("click",".flip",function(){
+        var swiper=mySwiper,
+            isPrevBtn=$(this).hasClass("prev");
+        if(isPrevBtn){
+            swiper.slidePrev();
+        }else{
+            swiper.slideNext();
+        }
+    })
 
 })

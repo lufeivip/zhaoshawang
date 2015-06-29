@@ -34,6 +34,42 @@
   width: 618px;
   height: 304px;
 }
+.m_scr .banner .flip {
+  background-repeat: repeat-y;
+  width: 59px;
+  height: 304px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+.m_scr .banner .flip:hover {
+  background-image: url(img/gradient_60.png);
+}
+.m_scr .banner .flip i {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  background-image: url("img/common.png");
+  background-repeat: no-repeat;
+}
+.m_scr .banner .prev {
+  left: 0;
+  background-position: -60px 0;
+}
+.m_scr .banner .prev i {
+  left: 10px;
+  background-position: -200px -200px;
+}
+.m_scr .banner .next {
+  right: 0;
+  background-position: 0px 0;
+}
+.m_scr .banner .next i {
+  right: 10px;
+  background-position: -240px -200px;
+}
 .m_scr .business {
   float: right;
   width: 234px;
@@ -72,7 +108,7 @@
   top: 0;
 }
 .widget-m .l-pic .hd .tit {
-  font: 22px/40px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font: 22px/40px "Microsoft yahei";
   margin: 5px 0 0 15px;
 }
 .widget-m .l-pic .hd .more {
@@ -94,7 +130,7 @@
 }
 .widget-m .tab .tab-hd .tag {
   display: inline-block;
-  font: 16px/50px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font: 16px/50px "Microsoft yahei";
   padding: 0 50px;
 }
 .widget-m .tab .tab-hd .active {

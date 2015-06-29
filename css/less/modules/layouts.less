@@ -89,7 +89,7 @@ body{
 
   #classify{
     background-color:#fff;
-    width:280px;
+    width:260px;
     position:absolute;
     left:0;
     top:0;
@@ -134,16 +134,70 @@ body{
         }
         .sub-menu{
           display:none;
-          width:910px;
-          height:292px;
-          padding:5px;
+          width:940px;
+          height:302px;
           position:absolute;
           top:0;
-          left:278px;
+          left:258px;
           background-color:#fff;
           border:1px solid #ebebeb;
           .boxshadow;
           z-index:3;
+        }
+        //子菜单下分类
+        .cate{
+          overflow:hidden;
+          .sub-cate{
+            float:left;
+            margin-bottom:10px;
+            dt{
+              color:@primary-color;
+              height:30px;
+            }
+            dd{
+              float:left;
+              height:20px;
+              font-size:12px;
+              line-height:20px;
+              margin-right:12px;
+              a{
+                display:block;
+                &:hover{
+                  color:@secondary-color;
+                  text-decoration:underline;
+                }
+              }
+            }
+          }
+        }
+        .texture,.material{
+          padding:15px 0px 5px 25px;
+          margin-right:160px;
+          .sub-cate{
+            width:50%;
+          }
+        }
+        .texture{
+          border-bottom:1px solid @border-color-gray;
+          height:180px;
+        }
+        .material{
+          padding-top:5px;
+          height:90px;
+        }
+        .ext{
+          padding:5px 5px 5px 0;
+          position:absolute;
+          right:0px;
+          top:0px;
+          .pic{
+            width:150px;
+            height:292px;
+            border:1px solid @border-color-gray;
+            img{
+
+            }
+          }
         }
       }
       //激活状态
@@ -151,6 +205,7 @@ body{
         border-color:#ebebeb;
         box-shadow:2px 2px 5px rgba(0,0,0,0.1);
         .link{
+          color:@primary-color;
           position:relative;
           z-index:4;
           padding-left:25px;

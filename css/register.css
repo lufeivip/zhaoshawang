@@ -87,7 +87,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font: 12px/42px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font: 12px/42px "Microsoft yahei";
   color: #aaaaaa;
 }
 .reg-wrapper .reg-step-2 .company-posi {
@@ -115,7 +115,7 @@
   background-position: 0 -250px;
 }
 .reg-wrapper .reg-success .result h1 {
-  font: 36px/50px "STHeiti", "Helvetica Neue", "Helvetica", "Microsoft yahei";
+  font: 36px/50px "Microsoft yahei";
   margin-bottom: 15px;
 }
 .reg-wrapper .reg-success .result .p {

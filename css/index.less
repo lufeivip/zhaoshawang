@@ -5,6 +5,41 @@
   .banner{
     width:618px;
     height:304px;
+    .flip{
+      background-repeat:repeat-y;
+      width:59px;
+      height:304px;
+      position:absolute;
+      top:0;
+      z-index:10;
+      &:hover{
+        background-image:url(img/gradient_60.png);
+      }
+      i{
+        width:40px;
+        height:40px;
+        position:absolute;
+        top:50%;
+        margin-top:-20px;
+        .sp_common;
+      }
+    }
+    .prev{
+      left:0;
+      background-position:-60px 0;
+      i{
+        left:10px;
+        background-position:-200px -200px;
+      }
+    }
+    .next{
+      right:0;
+      background-position:0px 0;
+      i{
+        right:10px;
+        background-position:-240px -200px;
+      }
+    }
   }
   .business{
     float:right;
