@@ -25,24 +25,42 @@
   visibility: hidden;
 }
 .search-wrapper .compa-info {
-  position: relative;
-  width: 180px;
   text-align: center;
+}
+.search-wrapper .compa-info .company {
+  width: 180px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.search-wrapper .compa-info .detail {
-  position: absolute;
-  top: 29px;
-  left: 50%;
-  width: 200px;
-  margin-left: -100px;
-  border: 1px solid #e9e9e9;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+.search-wrapper .compa-info .co-name,
+.search-wrapper .compa-info .contact {
+  color: #ff902d;
+  font-size: 14px;
+}
+.search-wrapper .compa-info .contact .name {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.search-wrapper .compa-info .contact .tel {
+  vertical-align: middle;
+  font-size: 20px;
+}
+.search-wrapper .compa-info .tips {
+  color: #aaaaaa;
+  font-size: 12px;
+}
+.search-wrapper .negotiate .tips-wrap {
+  width: 300px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #aaaaaa;
+}
+.search-wrapper .negotiate .tips-wrap h3 {
+  font: 16px/30px "Microsoft yahei";
+  color: #ff902d;
 }
 /*# sourceMappingURL=css/search.css.map */

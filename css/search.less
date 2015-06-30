@@ -1,19 +1,37 @@
 @import (reference) "common";
 .search-wrapper{
   .compa-info{
-    position:relative;
-    width:180px;
     text-align:center;
-    .margin_lr_auto;
-    .ellipsis;
-    .detail{
-      position:absolute;
-      top:29px;
-      left:50%;
-      width:200px;
-      margin-left:-100px;
-      border:1px solid @border-color-gray;
-      .boxshadow();
+    .company{
+      width:180px;
+      display:block;
+      .margin_lr_auto;
+      .ellipsis;
+    }
+    .co-name,.contact{
+      color:@primary-color;
+      font-size:14px;
+    }
+    .contact{
+      .name{vertical-align:middle; padding-right:5px;}
+      .tel{vertical-align:middle; font-size:20px;}
+    }
+    .tips{
+      color:@font-color-gray-light;
+      font-size:12px;
     }
   }
+  .negotiate{
+    .tips-wrap{
+      width:300px;
+      font-size:12px;
+      line-height:24px;
+      color:@font-color-gray-light;
+      h3{
+        font:16px/30px @font-family;
+        color:@primary-color;
+      }
+    }
+  }
+
 }

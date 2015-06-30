@@ -36,4 +36,13 @@ $(function(){
         $tags.removeClass('active');
         $tag.addClass('active');
     })
+    /*表格内tips*/
+    $("table").on("mouseover",'.tb-tips',function(e){
+        var $tipsWrap=$(this).find(".tips-wrap");
+        $(this).addClass("active");
+        $tipsWrap.css({'margin-left':$tipsWrap.width()/-2})
+    })
+    $("table").on("mouseout",'.tb-tips',function(){
+        $(this).removeClass("active");
+    })
 })
