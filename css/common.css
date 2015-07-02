@@ -899,7 +899,8 @@ em.required {
   padding: 0 10px;
   cursor: pointer;
 }
-.filter-panel .bd .factor .list dd:hover {
+.filter-panel .bd .factor .list dd:hover,
+.filter-panel .bd .factor .list dd.active {
   color: #008bf8;
   text-decoration: underline;
 }
