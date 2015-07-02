@@ -1,0 +1,121 @@
+#topbar,
+#header .main_nav,
+#h-f1,
+.main-wrapper .inner,
+#footer .inner,
+#footer .bottom_nav,
+.tab-panel .tab-hd,
+.form-list .form-group,
+.pager {
+  *zoom: 1;
+}
+#topbar:after,
+#header .main_nav:after,
+#h-f1:after,
+.main-wrapper .inner:after,
+#footer .inner:after,
+#footer .bottom_nav:after,
+.tab-panel .tab-hd:after,
+.form-list .form-group:after,
+.pager:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.tobuy-filter {
+  height: 30px;
+  border-top: 1px solid #e9e9e9;
+  padding: 20px 0 20px 200px;
+}
+.tobuy-filter .tobuy-search label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  text-align: right;
+  line-height: 24px;
+}
+.tobuy-filter .tobuy-search .ipt {
+  height: 24px;
+  line-height: 24px;
+  width: 79px;
+}
+.goods-list .item {
+  position: relative;
+  border: 1px solid #e9e9e9;
+  margin-bottom: 20px;
+  height: 154px;
+}
+.goods-list .item .ctrler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 154px;
+  padding: 0 30px;
+  border-left: 1px solid #e9e9e9;
+}
+.goods-list .item .ctrler .status {
+  font: 24px/30px "Microsoft yahei";
+  margin: 30px 0;
+  text-align: center;
+}
+.goods-list .item .ctrler .btn {
+  font-size: 20px;
+}
+.goods-list .item .con {
+  padding: 10px 0px 10px 20px;
+  margin-right: 250px;
+  height: 134px;
+  position: relative;
+}
+.goods-list .item .con .verify {
+  line-height: 18px;
+  white-space: nowrap;
+  padding: 0 5px;
+  border: 1px solid #ff902d;
+  color: #ff902d;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -10px;
+}
+.goods-list .item .con h4 {
+  font: 18px/30px "Microsoft yahei";
+  margin: 5px 0 15px;
+}
+.goods-list .item .con h4 span {
+  padding-right: 10px;
+}
+.goods-list .item .con p {
+  padding: 5px 0;
+  line-height: 30px;
+}
+.goods-list .item .con .price {
+  padding-left: 20px;
+}
+.goods-list .item .con .price em {
+  font-size: 24px;
+  color: #ff902d;
+  vertical-align: middle;
+}
+.goods-list .item .con .qq {
+  margin-left: 40px;
+}
+.goods-list .item .con .qq i {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url("img/common.png");
+  background-repeat: no-repeat;
+  background-position: -60px -250px;
+}
+.goods-list .item .con .qq i,
+.goods-list .item .con .qq .t {
+  vertical-align: middle;
+}
+.tobuy-wrapper .tit_h2 {
+  margin: 20px 0;
+}
+/*# sourceMappingURL=css/tobuy.css.map */

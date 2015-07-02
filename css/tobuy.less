@@ -1,0 +1,98 @@
+@import (reference) "common";
+.tobuy-filter{
+  height:30px;
+  border-top:1px solid @border-color-gray;
+  padding:20px 0 20px 200px;
+  .tobuy-search{
+    label{
+      display:inline-block;
+      vertical-align:middle;
+      width:70px;
+      text-align:right;
+      line-height:24px;
+    }
+    .ipt{
+      height:24px;
+      line-height:24px;
+      width:79px;
+    }
+
+  }
+}
+.goods-list{
+  .item{
+    position:relative;
+    border:1px solid @border-color-gray;
+    margin-bottom:20px;
+    height:154px;
+    .ctrler{
+      position:absolute;
+      top:0;
+      right:0;
+      width:180px;
+      height:154px;
+      padding:0 30px;
+      border-left:1px solid @border-color-gray;
+      .status{
+        font:24px/30px @font-family;
+        margin:30px 0;
+        text-align:center;
+      }
+      .btn{
+        font-size:20px;
+      }
+
+    }
+    .con{
+      padding:10px 0px 10px 20px;
+      margin-right:250px;
+      height:134px;
+      position:relative;
+
+      .verify{
+        line-height:18px;
+        white-space:nowrap;
+        padding:0 5px;
+        border:1px solid @primary-color;
+        color:@primary-color;
+        position:absolute;
+        right:0;
+        top:50%;
+        margin-top:-10px;
+      }
+      h4{
+        font:18px/30px @font-family;
+        margin:5px 0 15px;
+        span{padding-right:10px;}
+      }
+      p{
+        padding:5px 0;
+        line-height:30px;
+      }
+      .price{
+        padding-left:20px;
+        em{
+          font-size:24px;
+          color:@primary-color;
+          vertical-align:middle;
+        }
+      }
+      .qq{
+        margin-left:40px;
+        i{
+          width:20px;
+          height:20px;
+          display:inline-block;
+          .sp_common;
+          background-position:-60px -250px;
+        }
+        i,.t{
+          vertical-align:middle;
+        }
+      }
+    }
+  }
+}
+.tobuy-wrapper{
+  .tit_h2{margin:20px 0;}
+}

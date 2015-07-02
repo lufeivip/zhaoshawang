@@ -74,3 +74,47 @@
 	}
   }
 }
+
+/*表格筛选条件*/
+.list-filter{
+  margin:30px 0 10px;
+  padding:3px 0 3px 200px;
+  line-height:24px;
+  .result,.sort,.price_range{
+	vertical-align:middle;
+	display:inline-block;
+  }
+  .result{
+	padding:0 20px;
+	font-size:16px;
+  }
+  .sort{
+	a{
+	  background-color:@border-color-gray-dark;
+	  color:@font-color-base;
+	  margin:0 2px;
+	  padding:0 15px;
+	  line-height:24px;
+	  display:inline-block;
+	  vertical-align:middle;
+	  &.active{
+		color:#fff;
+		background-color:@primary-color;
+	  }
+	}
+  }
+  .price_range{
+	.ipt{
+	  height:24px;
+	  line-height:24px;
+	  width:60px;
+	  text-align:center;
+	  background-color:@border-color-gray-dark;
+	}
+	.btn{
+	  height:24px;
+	  line-height:24px;
+	}
+  }
+
+}

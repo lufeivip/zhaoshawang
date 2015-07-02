@@ -97,8 +97,8 @@
             <div class="main_nav">
                 <a href="index.html">首页</a>
                 <a href="javascript:;" class="active">现货供应</a>
-                <a href="javascript:;">报价单下载</a>
-                <a href="javascript:;">求购信息</a>
+                <a href="pricesheet.html">报价单下载</a>
+                <a href="tobuy.html">求购信息</a>
             </div>
         </div>
     </div>
@@ -149,7 +149,20 @@
                 </div>
             </div>
         </div>
-        <h2 class="tit_h2">现货供应列表</h2>
+        <h2 class="tit_h2 fl">现货供应列表</h2>
+        <div class="list-filter">
+            <span class="result">共搜索到xxx条数据</span>
+            <span class="sort">
+                <a class="default active" href="javasctipt:;">默认排序</a>
+                <a class="price" href="javasctipt:;">价格</a>
+            </span>
+            <span class="price_range">
+                <span class="ml30">价格范围</span>
+                <input type="text" placeholder="最低价" class="ipt"/> -
+                <input type="text" placeholder="最高价" class="ipt"/>
+                <button class="btn btn-secondary">确定</button>
+            </span>
+        </div>
         <div class="tabel-wrapper mb30">
             <table class="table table-dashed">
                 <thead>
@@ -600,6 +613,11 @@
                 </tbody>
             </table>
         </div>
+        <!--分页-->
+        <div class="pager">
+            <div class="pagination"></div>
+            <div class="pageinfo">共 <em>150</em> 页</div>
+        </div>
     <!--页面内容结束-->
     </div>
 </div>
@@ -642,6 +660,8 @@
 
     </div>
 </footer>
+<script src="lib/jquery.simplePagination.js"></script>
 <script src="js/common.js"></script>
+<script src="js/search.js"></script>
 </body>
 </html>

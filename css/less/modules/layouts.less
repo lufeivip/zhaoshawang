@@ -250,9 +250,9 @@ body{
 
 /*主内容区域*/
 .main-wrapper{
-  padding:0.1px; //fixed sub-element out of parent-element
   min-height:500px;
   .inner{
+    padding:0.1px; //fixed sub-element out of parent-element
     &:extend(.clearfix all);
     width:1200px;
     .margin_lr_auto;
@@ -310,5 +310,18 @@ body{
         }
       }
     }
+  }
+}
+
+/*两列布局*/
+.two-cols{
+  .clearfix;
+  article.main{
+    width:810px;
+    float:left;
+  }
+  aside.aside{
+    width:370px;
+    float:right;
   }
 }
