@@ -88,7 +88,6 @@ body{
   }
 
   #classify{
-    background-color:#fff;
     width:260px;
     position:absolute;
     left:0;
@@ -112,6 +111,7 @@ body{
     }
     .menu{
       position:relative;
+      background-color:#fff;
       .item{
         height:36px;
         border:1px solid transparent;
@@ -252,7 +252,8 @@ body{
 .main-wrapper{
   min-height:500px;
   .inner{
-    padding:0.1px; //fixed sub-element out of parent-element
+    padding-top:0.1px; //fixed sub-element out of parent-element
+    padding-bottom:30px;
     &:extend(.clearfix all);
     width:1200px;
     .margin_lr_auto;
