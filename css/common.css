@@ -260,6 +260,18 @@ p {
 .pd5 {
   padding: 5px;
 }
+.pt5 {
+  padding-top: 5px;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.pt15 {
+  padding-top: 15px;
+}
+.pt20 {
+  padding-top: 20px;
+}
 .pr5 {
   padding-right: 5px;
 }
@@ -322,7 +334,6 @@ p {
 .main-wrapper .inner,
 #footer .inner,
 #footer .bottom_nav,
-.tab-panel .tab-hd,
 .form-list .form-group,
 .pager {
   *zoom: 1;
@@ -334,7 +345,6 @@ p {
 .main-wrapper .inner:after,
 #footer .inner:after,
 #footer .bottom_nav:after,
-.tab-panel .tab-hd:after,
 .form-list .form-group:after,
 .pager:after {
   content: '';
@@ -680,35 +690,27 @@ body {
   width: 370px;
   float: right;
 }
-.tab-panel .tab-hd {
-  margin-bottom: -1px;
+.tab {
+  overflow: hidden;
 }
-.tab-panel .tab-hd .tag {
-  float: left;
-  background-color: #E6E9ED;
-  border: 1px solid #D4DAE6;
-  border-bottom-width: 0px ;
-  border-radius: 3px 3px 0 0 ;
-  height: 31px;
-  line-height: 32px;
-  padding: 0px 22px;
-  margin-right: 3px;
-  color: #353535;
-  text-decoration: none;
+.tab .tab-hd {
+  height: 50px;
+  background-color: #F6F6F6;
+  background-image: -webkit-linear-gradient(left, #f6f6f6, #ffffff);
+  background-image: -moz-linear-gradient(left, #f6f6f6, #ffffff);
+  background-image: -ms-linear-gradient(left, #f6f6f6, #ffffff);
 }
-.tab-panel .tab-hd .tag:hover {
-  background-color: #d2e5ed;
+.tab .tab-hd .tag {
+  display: inline-block;
+  font: 16px/50px "Microsoft yahei";
+  padding: 0 50px;
 }
-.tab-panel .tab-hd .tag.active {
-  height: 32px;
-  background-color: #fff;
-  border-color: #E3E7F0;
+.tab .tab-hd .active {
+  background-color: #ff902d;
+  color: #fff;
 }
-.tab-panel .tab-bd {
-  background-color: #fff;
-  border: 1px solid #E3E7F0;
-  padding: 25px;
-  border-radius: 0px 3px 3px 3px;
+.tab .tab-bd {
+  padding: 10px 15px;
 }
 .tit_h2 {
   font: 22px/30px "Microsoft yahei";
@@ -798,12 +800,12 @@ form .error {
   border: 1px solid #ff902d;
 }
 .btn-bordered:hover {
-  color: #ffffff;
-  background-color: #ff902d;
+  color: #ff902d;
+  background-color: #fff3e9;
 }
 .btn-bordered:active {
-  color: #ffffff;
-  background-color: #f97500;
+  color: #ff902d;
+  background-color: #ffd7b6;
 }
 .btn-bordered[disabled] {
   background-color: #d2d2d2;
@@ -902,6 +904,38 @@ em.required {
 }
 .filter-panel .bd .factor .list dd:hover,
 .filter-panel .bd .factor .list dd.active {
+  color: #008bf8;
+  text-decoration: underline;
+}
+.filter-panel .tab {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.filter-panel .tab .tab-hd .tag {
+  padding: 0 30px;
+}
+.filter-panel .tab .tab-bd {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.filter-panel .tab .tab-bd .sub-cate {
+  float: left;
+  width: 50%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.filter-panel .tab .tab-bd .sub-cate .title {
+  font-size: 14px;
+  line-height: 26px;
+  color: #ff902d;
+}
+.filter-panel .tab .tab-bd .sub-cate a {
+  font-size: 12px;
+  line-height: 24px;
+  float: left;
+  padding-right: 20px;
+}
+.filter-panel .tab .tab-bd .sub-cate a.active {
   color: #008bf8;
   text-decoration: underline;
 }
@@ -1020,6 +1054,18 @@ em.required {
 .list-filter .price_range .btn {
   height: 24px;
   line-height: 24px;
+}
+.list-filter-2 label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  text-align: right;
+  line-height: 24px;
+}
+.list-filter-2 .ipt {
+  height: 24px;
+  line-height: 24px;
+  width: 79px;
 }
 .pager {
   margin: 20px 0 30px;

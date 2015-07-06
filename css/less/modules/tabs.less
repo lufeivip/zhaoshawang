@@ -1,34 +1,21 @@
-.tab-panel{
-	.tab-hd{
-		&:extend(.clearfix all);
-		margin-bottom: -1px;
-		.tag{
-			float: left;
-			background-color: #E6E9ED;
-			border:1px solid #D4DAE6;
-			border-bottom-width:0px ;
-			border-radius:3px 3px 0 0 ;
-			height: 31px;
-			line-height: 32px;
-			padding: 0px 22px;
-			margin-right: 3px;
-			color:@font-color-base;
-			text-decoration: none;
-			&:hover{
-				background-color: #d2e5ed;
-			}
-			&.active{
-				height: 32px;
-				background-color: #fff;
-				border-color: #E3E7F0;
-			}
-		}
 
+.tab{
+  overflow:hidden;
+  .tab-hd{
+	height:50px;
+	background-color:#F6F6F6;
+	background-image:-webkit-linear-gradient(left,#F6F6F6,#fff);
+	background-image:-moz-linear-gradient(left,#F6F6F6,#fff);
+	background-image:-ms-linear-gradient(left,#F6F6F6,#fff);
+	.tag{
+	  display:inline-block;
+	  font:16px/50px @font-family;
+	  padding:0 50px;
 	}
-	.tab-bd{
-		background-color: #fff;
-		border: 1px solid #E3E7F0;
-		padding:25px;
-		border-radius: 0px 3px 3px 3px;
+	.active{
+	  background-color:@primary-color;
+	  color:#fff;
 	}
+  }
+  .tab-bd{padding:10px 15px;}
 }

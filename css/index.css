@@ -4,7 +4,6 @@
 .main-wrapper .inner,
 #footer .inner,
 #footer .bottom_nav,
-.tab-panel .tab-hd,
 .form-list .form-group,
 .pager,
 .widget-m .buyerlist .list {
@@ -16,7 +15,6 @@
 .main-wrapper .inner:after,
 #footer .inner:after,
 #footer .bottom_nav:after,
-.tab-panel .tab-hd:after,
 .form-list .form-group:after,
 .pager:after,
 .widget-m .buyerlist .list:after {
@@ -120,25 +118,6 @@
   height: 410px;
   margin-left: 280px;
   overflow: hidden;
-}
-.widget-m .tab .tab-hd {
-  height: 50px;
-  background-color: #F6F6F6;
-  background-image: -webkit-linear-gradient(left, #f6f6f6, #ffffff);
-  background-image: -moz-linear-gradient(left, #f6f6f6, #ffffff);
-  background-image: -ms-linear-gradient(left, #f6f6f6, #ffffff);
-}
-.widget-m .tab .tab-hd .tag {
-  display: inline-block;
-  font: 16px/50px "Microsoft yahei";
-  padding: 0 50px;
-}
-.widget-m .tab .tab-hd .active {
-  background-color: #ff902d;
-  color: #fff;
-}
-.widget-m .tab .tab-bd {
-  padding: 10px 15px;
 }
 .widget-m .tab .table {
   border-width: 0;

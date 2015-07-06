@@ -20,8 +20,10 @@ $(function(){
             _v=$(this).text(),
             _k=$list.data("type"),
             tp="";
-        console.log("k:",_k,"; v:",_v);
-        $(this).addClass("active").siblings(".v").removeClass("active");
+        //console.log("k:",_k,"; v:",_v);
+        //$(this).addClass("active").siblings(".v").removeClass("active");
+        $list.find(".v").removeClass("active");
+        $(this).addClass("active");
         if($result_wrap.find("[data-type="+_k+"]").size()){
             $result_wrap.find("[data-type="+_k+"]").find(".v").text(_v);
         }else{
@@ -32,12 +34,22 @@ $(function(){
             tp+='</dd>';
             $result_wrap.append(tp);
         }
+        console.log("此处调用搜索方法");
     })
     $(".filter-panel").on("click",".selected-c .close",function(){
         var $item=$(this).closest("dd"),
             $panel=$(this).closest(".filter-panel"),
-            _k=$item.data("type");
+            _k=$item.data("type"),
+            $act_list=$panel.find(".factor [data-type="+_k+"]");
         $item.remove();
-        $panel.find(".factor dl[data-type="+_k+"] .v").removeClass("active");
+        //$panel.find(".factor [data-type="+_k+"] .v").removeClass("active");
+        $act_list.each(function(i,v){
+            //console.log(i,$(v))
+            if($(v).hasClass("tab-hd")){
+                return;
+            }else{
+                $(v).find(".v").removeClass("active");
+            }
+        })
     })
 })

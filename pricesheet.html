@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>报价单下载|找纱网</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/pricesheet.css"/>
+    <script src="lib/jquery-1.8.2.min.js"></script>
+    <!--[if lte IE 9]>
+    <script src="lib/h5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="topbar">
+    <div class="inner">
+        <div id="topnav">
+            <a href="javascript:;">会员中心</a>
+            <a href="javascript:;">我的订单</a>
+            <a href="javascript:;">新手指南</a>
+            <a href="javascript:;">客户端下载</a>
+        </div>
+        <span class="welcome">欢迎来到找纱网</span>
+        <span class="account">
+            <a href="login.html" class="orange">请登录</a>
+            <a href="register.html">免费注册</a>
+        </span>
+    </div>
+</div>
+<header id="header">
+    <div class="inner">
+        <div id="h-f1">
+            <div class="logo">
+                <a href="javascript:;" class="pic"></a>
+            </div>
+            <div class="hotline">
+                服务热线：<span class="orange">400-8898-2306</span>
+            </div>
+            <div class="searchbar">
+                <input type="text" class="ipt" placeholder="请输入产品名称、规格、厂商信息"/>
+                <button type="button" class="btn btn-primary"><i class="icon icon-search40"></i></button>
+            </div>
+        </div>
+        <div id="h-f2">
+            <section id="classify" class="fold">
+                <h2 class="title"><i></i>纱线分类</h2>
+                <ul class="menu">
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>纯纺纱</a>
+
+                        <div class="sub-menu">
+                            sub-menu
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>纺纱</a>
+
+                        <div class="sub-menu">
+                            sub-menu2
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>进口纱线</a>
+
+                        <div class="sub-menu">
+                            sub-menu3
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>新纤维纱</a>
+
+                        <div class="sub-menu">
+                            sub-menu4
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>特种工艺纱</a>
+
+                        <div class="sub-menu">
+                            sub-menu5
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>功能性纺纱</a>
+
+                        <div class="sub-menu">
+                            sub-menu6
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>色纱/色纺</a>
+
+                        <div class="sub-menu">
+                            sub-menu7
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a href="javascript:;" class="link"><i></i>缝纫线</a>
+
+                        <div class="sub-menu">
+                            sub-menu8
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <div class="main_nav">
+                <a href="index.html">首页</a>
+                <a href="search.html">现货供应</a>
+                <a href="pricesheet.html" class="active">报价单下载</a>
+                <a href="tobuy.html">求购信息</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="main-wrapper search-wrapper">
+    <div class="inner">
+        <!--页面内容开始-->
+        <div class="filter-panel">
+            <div class="hd">
+                <dl class="selected-c">
+                    <dt>筛选条件：</dt>
+                    <dd data-type="pl"><span class="k">品类</span>：<span class="v">纯棉纱</span><a class="close"
+                                                                                              href="javasctipt:;">x</a>
+                    </dd>
+                    <dd data-type="zs"><span class="k">支数</span>：<span class="v">XX04S</span><a class="close"
+                                                                                                href="javasctipt:;">x</a>
+                    </dd>
+                    <dd data-type="ck"><span class="k">仓库</span>：<span class="v">广州深圳</span><a class="close"
+                                                                                               href="javasctipt:;">x</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="bd">
+                <div class="factor">
+                    <dl class="list" data-type="ck">
+                        <dt class="k">仓库：</dt>
+                        <dd class="v">浙江萧山</dd>
+                        <dd class="v">江苏常州</dd>
+                        <dd class="v active">广州深圳</dd>
+                    </dl>
+                    <dl class="list" data-type="zs">
+                        <dt class="k">支数：</dt>
+                        <dd class="v">XX01S</dd>
+                        <dd class="v">XX02S</dd>
+                        <dd class="v">XX03S</dd>
+                        <dd class="v active">XX04S</dd>
+                        <dd class="v">XX05S</dd>
+                        <dd class="v">XX06S</dd>
+                        <dd class="v">XX07S</dd>
+                        <dd class="v">XX08S</dd>
+                        <dd class="v">XX09S</dd>
+                        <dd class="v">XX10S</dd>
+                        <dd class="v">XX11S</dd>
+                        <dd class="v">XX12S</dd>
+                        <dd class="v">XX13S</dd>
+                        <dd class="v">XX14S</dd>
+                        <dd class="v">XX15S</dd>
+                        <dd class="v">XX16S</dd>
+                        <dd class="v">XX17S</dd>
+                        <dd class="v">XX18S</dd>
+                        <dd class="v">XX19S</dd>
+                        <dd class="v">XX20S</dd>
+                    </dl>
+                    <div class="tab p-type" node-type="tab">
+                        <div class="tab-hd list" node-type="tab-hd" data-type="pl">
+                            <div class="k hidden">品类：</div>
+                            <a class="tag v active" href="javascript:;">纯棉纱</a>
+                            <a class="tag v " href="javascript:;">混纺纱</a>
+                            <a class="tag v" href="javascript:;">进口纱线</a>
+                            <a class="tag v" href="javascript:;">新纤维纱</a>
+                            <a class="tag v" href="javascript:;">特种工艺纱</a>
+                            <a class="tag v" href="javascript:;">色纱/色纺</a>
+                            <a class="tag v" href="javascript:;">功能性纱线</a>
+                            <a class="tag v" href="javascript:;">缝纫线</a>
+                        </div>
+                        <div class="tab-bd list" node-type="tab-bd" data-type="pl">
+                            <div class="k hidden">品类：</div>
+                            <div class="tab-item">
+                                <div class="clearfix">
+                                    <div class="sub-cate">
+                                        <h5 class="title">涤混纺</h5>
+                                        <a href="javascript:;" class="v">涤/棉</a>
+                                        <a href="javascript:;" class="v">涤/粘</a>
+                                        <a href="javascript:;" class="v">涤/腈</a>
+                                        <a href="javascript:;" class="v">涤/棉/粘</a>
+                                    </div>
+                                    <div class="sub-cate">
+                                        <h5 class="title">麻混纺</h5>
+                                        <a href="javascript:;" class="v">麻 / 棉</a>
+                                        <a href="javascript:;" class="v">麻 / 粘</a>
+                                        <a href="javascript:;" class="v">麻 / 涤</a>
+                                        <a href="javascript:;" class="v">亚麻 / 绢丝</a>
+                                        <a href="javascript:;" class="v">亚麻 / 天丝</a>
+                                    </div>
+                                    <div class="sub-cate">
+                                        <h5 class="title">棉混纺</h5>
+                                        <a href="javascript:;" class="v">棉 / 竹</a>
+                                        <a href="javascript:;" class="v">棉 / 粘</a>
+                                        <a href="javascript:;" class="v">棉 / 涤</a>
+                                        <a href="javascript:;" class="v">棉 / 莫代尔</a>
+                                        <a href="javascript:;" class="v">棉 / 丝</a>
+                                        <a href="javascript:;" class="v">棉 / 毛</a>
+                                        <a href="javascript:;" class="v">棉 / 天丝</a>
+                                    </div>
+                                    <div class="sub-cate">
+                                        <h5 class="title">腈混纺</h5>
+                                        <a href="javascript:;" class="v">腈 / 棉</a>
+                                        <a href="javascript:;" class="v">腈 / 粘</a>
+                                    </div>
+                                    <div class="sub-cate">
+                                        <h5 class="title">毛混纺</h5>
+                                        <a href="javascript:;" class="v">毛 / 腈</a>
+                                        <a href="javascript:;" class="v">羊绒 / 棉</a>
+                                        <a href="javascript:;" class="v">兔绒 / 棉</a>
+                                        <a href="javascript:;" class="v">羊毛 / 涤</a>
+                                        <a href="javascript:;" class="v">羊绒 / 腈</a>
+                                        <a href="javascript:;" class="v">天丝 / 羊毛</a>
+                                    </div>
+                                    <div class="sub-cate">
+                                        <h5 class="title">绢丝</h5>
+                                        <a href="javascript:;" class="v">绢 / 粘</a>
+                                        <a href="javascript:;" class="v">绢丝 / 亚麻</a>
+                                        <a href="javascript:;" class="v">绢丝 / 天丝</a>
+                                        <a href="javascript:;" class="v">绢丝 / 羊绒</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-item" style="display:none">2
+                            </div>
+                            <div class="tab-item" style="display:none">3
+                            </div>
+                            <div class="tab-item" style="display:none">4
+                            </div>
+                            <div class="tab-item" style="display:none">5
+                            </div>
+                            <div class="tab-item" style="display:none">6
+                            </div>
+                            <div class="tab-item" style="display:none">7
+                            </div>
+                            <div class="tab-item" style="display:none">8
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt10 pb10 clearfix">
+            <div class="action_group">
+                <button class="btn btn-large btn-primary">上传报价单</button>
+                <button class="btn btn-large btn-secondary">下载报价单模板</button>
+            </div>
+            <div class="p-sheet-search">
+                <div class="list-filter-2">
+                    <label>品种：</label>
+                    <input class="ipt" type="text"/>
+                    <label>支数：</label>
+                    <input class="ipt" type="text"/>
+                    <label>仓库：</label>
+                    <input class="ipt" type="text"/>
+                    <button class="btn btn-primary btn-small ml10">搜索</button>
+                </div>
+            </div>
+        </div>
+        <div class="tabel-wrapper mb30">
+            <table class="table table-dashed">
+                <thead>
+                <tr>
+                    <th>厂商</th>
+                    <th>主营品种</th>
+                    <th>联系人</th>
+                    <th>联系方式</th>
+                    <th>商家所在地</th>
+                    <th>发布时间</th>
+                    <th>下载次数</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="javascript:;" class="orange">江苏常州东华纺织贸易有限公司</a></td>
+                        <td>竹节纱、色纱</td>
+                        <td>顼先生</td>
+                        <td>13987654321</td>
+                        <td>江苏</td>
+                        <td>10分钟前</td>
+                        <td>20</td>
+                        <td>
+                            <button class="btn btn-small btn-bordered">下载</button>
+                            <button class="btn btn-small btn-primary">预览</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:;" class="orange">江苏常州东华纺织贸易有限公司</a></td>
+                        <td>竹节纱、色纱</td>
+                        <td>顼先生</td>
+                        <td>13987654321</td>
+                        <td>江苏</td>
+                        <td>10分钟前</td>
+                        <td>20</td>
+                        <td>
+                            <button class="btn btn-small btn-bordered">下载</button>
+                            <button class="btn btn-small btn-primary">预览</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:;" class="orange">江苏常州东华纺织贸易有限公司</a></td>
+                        <td>竹节纱、色纱</td>
+                        <td>顼先生</td>
+                        <td>13987654321</td>
+                        <td>江苏</td>
+                        <td>10分钟前</td>
+                        <td>20</td>
+                        <td>
+                            <button class="btn btn-small btn-bordered">下载</button>
+                            <button class="btn btn-small btn-primary">预览</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:;" class="orange">江苏常州东华纺织贸易有限公司</a></td>
+                        <td>竹节纱、色纱</td>
+                        <td>顼先生</td>
+                        <td>13987654321</td>
+                        <td>江苏</td>
+                        <td>10分钟前</td>
+                        <td>20</td>
+                        <td>
+                            <button class="btn btn-small btn-bordered">下载</button>
+                            <button class="btn btn-small btn-primary">预览</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:;" class="orange">江苏常州东华纺织贸易有限公司</a></td>
+                        <td>竹节纱、色纱</td>
+                        <td>顼先生</td>
+                        <td>13987654321</td>
+                        <td>江苏</td>
+                        <td>10分钟前</td>
+                        <td>20</td>
+                        <td>
+                            <button class="btn btn-small btn-bordered">下载</button>
+                            <button class="btn btn-small btn-primary">预览</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:;" class="orange">江苏常州东华纺织贸易有限公司</a></td>
+                        <td>竹节纱、色纱</td>
+                        <td>顼先生</td>
+                        <td>13987654321</td>
+                        <td>江苏</td>
+                        <td>10分钟前</td>
+                        <td>20</td>
+                        <td>
+                            <button class="btn btn-small btn-bordered">下载</button>
+                            <button class="btn btn-small btn-primary">预览</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:;" class="orange">江苏常州东华纺织贸易有限公司</a></td>
+                        <td>竹节纱、色纱</td>
+                        <td>顼先生</td>
+                        <td>13987654321</td>
+                        <td>江苏</td>
+                        <td>10分钟前</td>
+                        <td>20</td>
+                        <td>
+                            <button class="btn btn-small btn-bordered">下载</button>
+                            <button class="btn btn-small btn-primary">预览</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:;" class="orange">江苏常州东华纺织贸易有限公司</a></td>
+                        <td>竹节纱、色纱</td>
+                        <td>顼先生</td>
+                        <td>13987654321</td>
+                        <td>江苏</td>
+                        <td>10分钟前</td>
+                        <td>20</td>
+                        <td>
+                            <button class="btn btn-small btn-bordered">下载</button>
+                            <button class="btn btn-small btn-primary">预览</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:;" class="orange">江苏常州东华纺织贸易有限公司</a></td>
+                        <td>竹节纱、色纱</td>
+                        <td>顼先生</td>
+                        <td>13987654321</td>
+                        <td>江苏</td>
+                        <td>10分钟前</td>
+                        <td>20</td>
+                        <td>
+                            <button class="btn btn-small btn-bordered">下载</button>
+                            <button class="btn btn-small btn-primary">预览</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:;" class="orange">江苏常州东华纺织贸易有限公司</a></td>
+                        <td>竹节纱、色纱</td>
+                        <td>顼先生</td>
+                        <td>13987654321</td>
+                        <td>江苏</td>
+                        <td>10分钟前</td>
+                        <td>20</td>
+                        <td>
+                            <button class="btn btn-small btn-bordered">下载</button>
+                            <button class="btn btn-small btn-primary">预览</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="javascript:;" class="orange">江苏常州东华纺织贸易有限公司</a></td>
+                        <td>竹节纱、色纱</td>
+                        <td>顼先生</td>
+                        <td>13987654321</td>
+                        <td>江苏</td>
+                        <td>10分钟前</td>
+                        <td>20</td>
+                        <td>
+                            <button class="btn btn-small btn-bordered">下载</button>
+                            <button class="btn btn-small btn-primary">预览</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--分页-->
+        <div class="pager">
+            <div class="pagination"></div>
+            <div class="pageinfo">共 <em>150</em> 条</div>
+        </div>
+        <!--页面内容结束-->
+    </div>
+</div>
+<footer id="footer">
+    <div class="inner">
+        <div class="logo_gray"></div>
+        <div class="qr-code">
+            <div class="img"><img src="images/qr-code.png" alt=""/></div>
+            <p>加找纱网为微信好友</p>
+        </div>
+        <div class="bottom_nav">
+            <nav>
+                <h3>我要买货</h3>
+                <ul>
+                    <li><a href="javascript:;">我是买家，如何找货？</a></li>
+                    <li><a href="javascript:;">如何委托交易</a></li>
+                    <li><a href="javascript:;">如何自己找货</a></li>
+                    <li><a href="javascript:;">如何查看</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>我要卖货</h3>
+                <ul>
+                    <li><a href="javascript:;">我是买家，如何销售？</a></li>
+                    <li><a href="javascript:;">怎样发布报价</a></li>
+                    <li><a href="javascript:;">怎样报价给买家</a></li>
+                    <li><a href="javascript:;">如何批量上传报价单</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>常见问题</h3>
+                <ul>
+                    <li><a href="javascript:;">如何注册账号</a></li>
+                    <li><a href="javascript:;">无法登陆/忘记密码</a></li>
+                    <li><a href="javascript:;">怎样报价给买家</a></li>
+                    <li><a href="javascript:;">如何查看</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+</footer>
+<script src="lib/jquery.simplePagination.js"></script>
+<script src="js/common.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>
